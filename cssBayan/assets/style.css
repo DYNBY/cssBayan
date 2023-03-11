@@ -31,31 +31,36 @@ body {
     background-image: url(./change_one_line_of_css_and_all_your_styles_break.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    height: 25vw;
+    width: 44vw;
   }
   .memPic_2 {
     background-image: url(./do_you_speak_english.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    width: 45vw;
+    height: 44vw;
   }
   .memPic_3 {
     background-image: url(./i_know_html_css.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    width: 45vw;
+    height: 45vw;
   }
   .memPic_4 {
     background-image: url(./today_the_dog_tomorrow_the_world.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    width: 50vw;
+    height: 43vw;
   }
   .memPic_5 {
     background-image: url(./you_get_a_console_log.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    width: 59vw;
+    height: 44vw;
   }
   .picContainer {
     display: flex; 
@@ -98,14 +103,14 @@ body {
 }
 .mem-input:checked ~ .picContainer {
     opacity: 1;
-    height: 60vh;
+    height: auto;
 }
 .mem-input:checked ~ .memTitle {
     color: black;
 }
 .memItem:hover > .picContainer {
     opacity: 1;
-    height: 60vh;
+    height: auto;
 }
 .plus {
     display: block;
