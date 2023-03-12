@@ -117,6 +117,10 @@ body {
     height: auto;
     transition: all 1s ease-in-out;
 }
+.memItem:hover > .plus {
+  rotate: 45deg;
+}
+
 .plus {
     display: block;
     background: url(./plus.svg);
