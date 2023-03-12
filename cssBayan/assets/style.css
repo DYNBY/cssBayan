@@ -1,0 +1,155 @@
+@media (min-width: 320px) {
+body {
+    font-family: georgia, serif;
+    font-size: 4vw;
+    font-weight: bold;
+    background-color:burlywood;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: color 0.1s ease-out;
+  }
+  h1 {
+    text-align:left;
+  }
+  .wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+  }
+  .container {
+    width: 80vw;
+    margin: 0 auto;
+    color: blue;
+  }
+  .memPicture {
+    display: block;
+    width: 60vw;
+    height: 60vh;
+  }
+  .memPic_1 {
+    background-image: url(./change_one_line_of_css_and_all_your_styles_break.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25vw;
+    width: 44vw;
+  }
+  .memPic_2 {
+    background-image: url(./do_you_speak_english.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 44vw;
+  }
+  .memPic_3 {
+    background-image: url(./i_know_html_css.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 45vw;
+  }
+  .memPic_4 {
+    background-image: url(./today_the_dog_tomorrow_the_world.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 43vw;
+  }
+  .memPic_5 {
+    background-image: url(./you_get_a_console_log.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 59vw;
+    height: 44vw;
+  }
+  .picContainer {
+    display: flex; 
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    height: 0;
+    /* cursor: pointer; */
+    justify-content: center;
+    width: 80vw;
+  }
+  .memItem {
+    border: 0.01em solid gray;
+    border-left: 0em;
+    border-right: 0em;
+    border-bottom: 0em;
+    /* cursor: pointer; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 1vw;
+    font-size: 3vw;
+  }
+  .memTitle {
+    display: block;
+    /* cursor: pointer; */
+    
+  }
+.mem-input {
+    /* cursor: pointer; */
+    appearance: none; 
+}
+
+.container:hover {
+    color: black;
+}
+.container:hover .plus {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.mem-input:checked ~ .picContainer {
+    opacity: 1;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+.mem-input:checked ~ .memTitle {
+    color: black;
+}
+.memItem:hover > .picContainer {
+    opacity: 1;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+.memItem:hover > .plus {
+  rotate: 45deg;
+}
+
+.plus {
+    display: block;
+    background: url(./plus.svg);
+    background-repeat: no-repeat;
+    /* cursor: pointer; */
+    width: 2vw;
+    height: 2vw;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    margin-left: auto;
+}
+.mem-input:checked + .plus {
+    rotate: 45deg;
+}
+}
+@media (min-width: 820px) {
+  body {
+    font-size: 3vw;
+}
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 2vw;
+}
+.picContainer, .memItem, .memTitle, .mem-input, .plus   {
+  cursor: pointer;
+}
+.memItem {
+  font-size: 2vw;
+}
+}
